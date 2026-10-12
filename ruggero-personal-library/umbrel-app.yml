@@ -1,0 +1,62 @@
+manifestVersion: 1
+id: ruggero-personal-library
+name: Personal Library
+tagline: Your shelf, a librarian that knows your taste, and books straight to your Kindle
+icon: https://raw.githubusercontent.com/RuggeroCapo/umbrel-apps/main/ruggero-personal-library/icon.svg
+category: media
+version: "0.1.0"
+port: 8796
+description: >-
+  Personal Library is a private reading companion. Keep your shelf (reading, to read, read,
+  abandoned) with half-star ratings and notes, or import it from a Goodreads export.
+
+
+  Your Hermes Agent becomes the librarian: it suggests what to read next and explains every
+  pick in terms of your own books, answers natural-language requests ("a slow mystery set in Kyoto"),
+  and delivers a chosen book to your Kindle using the skills you have installed in Hermes,
+  with each step and permission request shown live. Public-domain books from Project Gutenberg
+  can be mailed to the Kindle directly.
+
+
+  Search covers Open Library and Project Gutenberg (Google Books optional). All covers are
+  cached on your Umbrel, so your browser only talks to your own server.
+
+
+  To connect Hermes, enable its API server (API_SERVER_ENABLED, API_SERVER_HOST=0.0.0.0,
+  API_SERVER_KEY in Hermes' .env) and paste the key in Settings. Without Hermes the shelf,
+  search and shelf-based suggestions still work. Interface in Italian.
+developer: Ruggero
+website: https://github.com/RuggeroCapo/personal-library
+submitter: Ruggero
+submission: https://github.com/RuggeroCapo/personal-library
+repo: https://github.com/RuggeroCapo/personal-library
+support: https://github.com/RuggeroCapo/personal-library/issues
+gallery: []
+releaseNotes: >-
+  First release.
+dependencies: []
+widgets:
+  - id: "reading"
+    type: "four-stats"
+    refresh: "1m"
+    endpoint: "server:3000/api/widget/stats"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "In lettura"
+          text: "2"
+          subtext: "libri"
+        - title: "Letti nel 2026"
+          text: "11"
+          subtext: "di 24"
+        - title: "Da leggere"
+          text: "17"
+          subtext: "libri"
+        - title: "Consegne"
+          text: "1"
+          subtext: "in corso"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
