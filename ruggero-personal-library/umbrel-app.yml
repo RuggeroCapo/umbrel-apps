@@ -4,7 +4,7 @@ name: Personal Library
 tagline: Your shelf, a librarian that knows your taste, and books straight to your Kindle
 icon: https://raw.githubusercontent.com/RuggeroCapo/umbrel-apps/main/ruggero-personal-library/icon.svg
 category: media
-version: "0.1.0"
+version: "0.2.0"
 port: 8796
 description: >-
   Personal Library is a private reading companion. Keep your shelf (reading, to read, read,
@@ -33,7 +33,7 @@ repo: https://github.com/RuggeroCapo/personal-library
 support: https://github.com/RuggeroCapo/personal-library/issues
 gallery: []
 releaseNotes: >-
-  First release.
+  Redesigned interface, Librarian chat with live Hermes steps, offline-ready PWA and refreshed icons.
 dependencies: []
 widgets:
   - id: "reading"
