@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: ruggero-send-to-trilium_server_1
+      APP_PORT: 8080
+      # The web page stays behind the Umbrel login; the extension and phone use /api with the app's own token.
+      PROXY_AUTH_WHITELIST: "/api/*"
+
+  server:
+    image: ghcr.io/ruggerocapo/send-to-trilium:1.1.0
+    restart: on-failure
+    user: "1000:1000"
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ${APP_DATA_DIR}/data:/data

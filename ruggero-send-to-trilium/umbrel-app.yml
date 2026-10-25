@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: ruggero-send-to-trilium
+category: files
+name: Send to Trilium
+version: "1.1.0"
+tagline: Summarize links, PDFs and videos with Gemini into Trilium
+icon: https://raw.githubusercontent.com/RuggeroCapo/umbrel-apps/main/ruggero-send-to-trilium/icon.svg
+description: >-
+  Receives links, text, PDFs and images from the Send to Trilium Chrome extension and from your
+  phone's share menu, summarizes them with Google Gemini and saves them as notes in Trilium Notes
+  through ETAPI.
+
+
+  Open the app to set the Trilium address and ETAPI token, the Gemini API key and the note
+  preferences, and to copy the API token your devices use.
+releaseNotes: >-
+  First server version: Gemini and Trilium now run here, shared by the extension and the phone.
+developer: Ruggero Capo
+website: https://github.com/RuggeroCapo/send-to-trilium
+dependencies: []
+repo: https://github.com/RuggeroCapo/send-to-trilium
+support: https://github.com/RuggeroCapo/send-to-trilium/issues
+port: 4380
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Ruggero Capo
+submission: https://github.com/RuggeroCapo/send-to-trilium
